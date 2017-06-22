@@ -1,5 +1,6 @@
 package pl.kobietydokodu.DAO;
 
+import org.springframework.stereotype.Repository;
 import pl.kobietydokodu.model.Kot;
 
 import java.util.HashMap;
@@ -10,6 +11,7 @@ import java.util.Map;
 /**
  * Created by Jarek on 2016-12-19.
  */
+@Repository
 public class KotDAO {
     List<Kot> koty= new LinkedList<Kot>();
     Map<Integer,Kot> kociaMapa = new HashMap<Integer,Kot>();
